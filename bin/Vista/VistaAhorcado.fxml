@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControlAhorcado">
+   <children>
+      <ImageView fitHeight="560.0" fitWidth="760.0">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <Pane fx:id="PInicio" Visible="true" focusTraversable="true" prefHeight="560.0" prefWidth="760.0">
+         <children>
+            <Label layoutX="34.0" prefHeight="117.0" prefWidth="724.0" text="BIENVENIDO AL JUEGO DEL AHORCADO" textAlignment="CENTER" textFill="#e4dddd" textOverrun="CENTER_ELLIPSIS" underline="true">
+               <font>
+                  <Font name="Viner Hand ITC" size="34.0" />
+               </font>
+            </Label>
+            <Button id="button1" fx:id="btInicio1" layoutX="263.0" layoutY="203.0" mnemonicParsing="false" onAction="#click_btInicio1" prefHeight="71.0" prefWidth="253.0" style="-fx-background-color: 0000000;" styleClass="button4" stylesheets="@application.css" text="Nuevo Juego" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button2" layoutX="230.0" layoutY="325.0" mnemonicParsing="false" onAction="#click_btSalir" prefHeight="57.0" prefWidth="319.0" style="-fx-background-color: 0000000;" styleClass="button4" stylesheets="@application.css" text="Volver Atrás" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button2" fx:id="btInicio2" layoutX="238.0" layoutY="262.0" mnemonicParsing="false" onAction="#click_btInicio2" prefHeight="71.0" prefWidth="302.0" style="-fx-background-color: 0000000;" styleClass="button4" stylesheets="@application.css" text="Como Jugar" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="313.0" fitWidth="265.0" layoutX="27.0" layoutY="131.0" opacity="0.88" />
+         </children>
+      </Pane>
+      <Pane fx:id="PJuego" focusTraversable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="550.0" prefWidth="750.0" visible="false">
+         <children>
+            <GridPane alignment="BOTTOM_CENTER" layoutX="8.0" layoutY="296.0" prefHeight="231.0" prefWidth="432.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.0" minWidth="10.0" prefWidth="61.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="73.0" minWidth="10.0" prefWidth="65.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.0" minWidth="10.0" prefWidth="64.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="10.0" prefWidth="55.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.0" minWidth="10.0" prefWidth="59.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="79.0" minWidth="10.0" prefWidth="55.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="10.0" prefWidth="53.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="70.0" minHeight="5.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="79.0" minHeight="10.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="0.0" prefWidth="71.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="W" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="102.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="O" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="118.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="I" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="127.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="U" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="100.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="Ñ" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="109.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="H" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="73.0" prefWidth="72.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="B" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Viner Hand ITC" size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="87.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="P" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="84.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="J" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="70.0" prefWidth="77.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="C" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="99.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="V" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="107.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="X" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="115.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="Q" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="79.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="K" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="99.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="D" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="85.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="M" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="84.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="F" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="91.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="L" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="70.0" prefWidth="103.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="E" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="97.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="R" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="102.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="Y" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="108.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="S" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="74.0" prefWidth="65.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="A" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true">
+                     <font>
+                        <Font name="Viner Hand ITC" size="27.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="91.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="T" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="90.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="N" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="86.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="G" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button id="letra" alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" mnemonicParsing="false" onAction="#clickletra" prefHeight="62.0" prefWidth="92.0" style="-fx-background-color: 0;" styleClass="letra" stylesheets="@application.css" text="Z" textFill="#e4dddd" textOverrun="CENTER_WORD_ELLIPSIS" wrapText="true" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Viner Hand ITC" size="23.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </GridPane>
+            <GridPane fx:id="vidas" layoutX="483.0" layoutY="20.0" prefHeight="41.0" prefWidth="219.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="v1" fitHeight="35.0" fitWidth="46.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="v2" fitHeight="43.0" fitWidth="35.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="v3" fitHeight="43.0" fitWidth="35.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="v4" fitHeight="43.0" fitWidth="35.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="v6" fitHeight="43.0" fitWidth="35.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="v5" fitHeight="43.0" fitWidth="35.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5">
+                     <cursor>
+                        <Cursor fx:constant="NONE" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </GridPane>
+            <ImageView fx:id="a1" fitHeight="300.0" fitWidth="244.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="DISAPPEAR" />
+               </cursor>
+            </ImageView>
+            <Label focusTraversable="false" layoutX="382.0" layoutY="10.0" prefHeight="62.0" prefWidth="96.0" text="Vidas:" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="31.0" />
+               </font>
+            </Label>
+            <TextField id="palabra" fx:id="palabra" editable="false" layoutX="243.0" layoutY="127.0" prefHeight="109.0" prefWidth="481.0" style="-fx-background-color: 0;" styleClass="palabra" stylesheets="@application.css">
+               <font>
+                  <Font name="Viner Hand ITC" size="40.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane fx:id="PWin" prefHeight="550.0" prefWidth="750.0" visible="false">
+         <children>
+            <Label layoutX="140.0" layoutY="55.0" text="¡HAS GANADO!" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="62.0" />
+               </font>
+            </Label>
+            <Button id="button1" fx:id="btWin1" layoutX="249.0" layoutY="240.0" mnemonicParsing="false" onAction="#click_btWin1" prefHeight="71.0" prefWidth="253.0" style="-fx-background-color: 0000000;" styleClass="button4" stylesheets="@application.css" text="Nuevo Juego" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button1" fx:id="btWin2" layoutX="226.0" layoutY="311.0" mnemonicParsing="false" onAction="#click_btWin2" prefHeight="71.0" prefWidth="302.0" style="-fx-background-color: 0000000;" styleClass="button4" stylesheets="@application.css" text="Volver al Menu" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="294.0" fitWidth="319.0" layoutY="188.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../bin/img1/win.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Plose" focusTraversable="true" layoutX="10.0" layoutY="10.0" prefHeight="550.0" prefWidth="750.0" visible="false">
+         <children>
+            <Label layoutX="139.0" layoutY="34.0" text="HAS PERDIDO.." textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="62.0" />
+               </font>
+            </Label>
+            <Button id="button1" fx:id="btlose1" layoutX="249.0" layoutY="240.0" mnemonicParsing="false" onAction="#click_btlose1" prefHeight="71.0" prefWidth="253.0" style="-fx-background-color: 0000000;" styleClass="button4" stylesheets="@application.css" text="Nuevo Juego" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button1" fx:id="btlose2" layoutX="229.0" layoutY="311.0" mnemonicParsing="false" onAction="#click_btlose2" prefHeight="71.0" prefWidth="302.0" style="-fx-background-color: 0000000;" styleClass="button4" stylesheets="@application.css" text="Volver al Menu" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fx:id="losemov" fitHeight="328.0" fitWidth="265.0" layoutX="7.0" layoutY="147.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../bin/img1/loose.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="328.0" fitWidth="229.0" layoutX="36.0" layoutY="147.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../bin/img1/ahorcado_6.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="Pinstruccion" prefHeight="560.0" prefWidth="760.0" visible="false">
+         <children>
+            <Label layoutX="26.0" layoutY="76.0" prefHeight="61.0" prefWidth="408.0" text="Instrucciones para jugar:" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="30.0" />
+               </font>
+            </Label>
+            <TextField id="palabra" editable="false" focusTraversable="false" layoutX="14.0" layoutY="137.0" prefHeight="42.0" prefWidth="672.0" style="-fx-background-color: 0;" styleClass="palabra" stylesheets="@application.css" text="Tienes 6 intentos en los que tienes que ir descubriendo que letras (Haciendo">
+               <font>
+                  <Font name="Modern No. 20" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="palabra" editable="false" layoutX="14.0" layoutY="177.0" prefHeight="25.0" prefWidth="672.0" style="-fx-background-color: 0;" styleClass="palabra" stylesheets="@application.css" text="click sobre ellas en la parte inferior) tiene la palabra a descubrir. A medida">
+               <font>
+                  <Font name="Modern No. 20" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="palabra" editable="false" layoutX="14.0" layoutY="218.0" prefHeight="42.0" prefWidth="672.0" style="-fx-background-color: 0;" styleClass="palabra" stylesheets="@application.css" text="que vayas fallando se irá construyendo la horca, si llegas a 6 fallos, ">
+               <font>
+                  <Font name="Modern No. 20" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="palabra" editable="false" layoutX="14.0" layoutY="256.0" prefHeight="42.0" prefWidth="685.0" style="-fx-background-color: 0;" styleClass="palabra" stylesheets="@application.css" text="ahorcado, si descubres la palabra, ganarás. Las letras a adivinar ">
+               <font>
+                  <Font name="Modern No. 20" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="palabra" editable="false" layoutX="26.0" layoutY="304.0" prefHeight="42.0" prefWidth="540.0" style="-fx-background-color: 0;" styleClass="palabra" stylesheets="@application.css" text="están representadas como _ . Si una palabra tiene 3 letras será:">
+               <font>
+                  <Font name="Modern No. 20" size="20.0" />
+               </font>
+            </TextField>
+            <TextField id="palabra" editable="false" layoutX="26.0" layoutY="352.0" prefHeight="25.0" prefWidth="302.0" style="-fx-background-color: 0;" styleClass="palabra" stylesheets="@application.css" text=" _ _ _ al comienzo del juego.">
+               <font>
+                  <Font name="Modern No. 20" size="20.0" />
+               </font>
+            </TextField>
+            <Button id="button1" fx:id="btInstruccion1" layoutX="53.0" layoutY="414.0" mnemonicParsing="false" onAction="#click_btInstruccion1" prefHeight="71.0" prefWidth="302.0" style="-fx-background-color: 0000000;" styleClass="button4" stylesheets="@application.css" text="Volver al Menu" textFill="#e4dddd">
+               <font>
+                  <Font name="Viner Hand ITC" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

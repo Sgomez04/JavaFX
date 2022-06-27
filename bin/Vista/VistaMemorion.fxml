@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="735.0" styleClass="panelBase" stylesheets="@application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControlMemorion">
+   <children>
+      <ImageView fitHeight="576.0" fitWidth="735.0" />
+      <ImageView fitHeight="306.0" fitWidth="560.0" layoutX="87.0" layoutY="64.0" pickOnBounds="true" />
+      <ImageView fitHeight="145.0" fitWidth="501.0" layoutX="117.0" layoutY="158.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane fx:id="Pmenu" prefHeight="576.0" prefWidth="734.0">
+         <children>
+            <Button id="button1" fx:id="btInicio1" layoutX="36.0" layoutY="446.0" mnemonicParsing="false" onAction="#click_btInicio1" prefHeight="76.0" prefWidth="319.0" style="-fx-background-color: 0000000; -fx-border-color: WHITE; -fx-border-radius: 3pc;" styleClass="button1" stylesheets="@application.css" text="Nuevo Juego" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="43.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button1" fx:id="btInicio2" layoutX="416.0" layoutY="446.0" mnemonicParsing="false" onAction="#click_btInicio2" prefHeight="86.0" prefWidth="284.0" style="-fx-background-color: 0000000; -fx-border-color: WHITE; -fx-border-radius: 3pc;" styleClass="button1" stylesheets="@application.css" text="Como Jugar" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="43.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button1" fx:id="btInicio3" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#click_btInicio3" prefHeight="61.0" prefWidth="188.0" style="-fx-background-color: 0000000; -fx-border-color: WHITE; -fx-border-radius: 3pc;" styleClass="button3" stylesheets="@application.css" text="Volver al Menu" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="Pjuego" prefHeight="576.0" prefWidth="734.0" visible="false">
+         <children>
+            <ImageView fitHeight="586.0" fitWidth="734.0" layoutY="-4.0" pickOnBounds="true" />
+            <Label fx:id="labelvidas" layoutX="384.0" layoutY="517.0" style="-fx-background-color: transparent;" text="VIDAS:" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="28.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="labelnombre" layoutX="14.0" layoutY="26.0" text="CUADRO:" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="28.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Button id="button1" fx:id="btatras" disable="true" layoutX="212.0" layoutY="474.0" mnemonicParsing="false" onAction="#click_btatras" prefHeight="86.0" prefWidth="319.0" style="-fx-background-color: transparent; -fx-border-color: WHITE; -fx-border-radius: 3pc;" styleClass="button1" stylesheets="@application.css" text="VOLVER ATRÁS" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Mistral" size="43.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <GridPane fx:id="GPvidas" layoutX="456.0" layoutY="511.0" prefHeight="51.0" prefWidth="271.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fx:id="v1" fitHeight="63.0" fitWidth="57.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.9" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fx:id="v2" fitHeight="63.0" fitWidth="63.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.9" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                  <ImageView fx:id="v3" fitHeight="63.0" fitWidth="64.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.9" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" />
+                  <ImageView fx:id="v4" fitHeight="63.0" fitWidth="62.0" nodeOrientation="RIGHT_TO_LEFT" opacity="0.9" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+            <ImageView fx:id="f0" fitHeight="177.0" fitWidth="128.0" layoutX="22.0" layoutY="86.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="f1" fitHeight="177.0" fitWidth="128.0" layoutX="162.0" layoutY="86.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="f2" fitHeight="177.0" fitWidth="128.0" layoutX="303.0" layoutY="86.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="f3" fitHeight="177.0" fitWidth="128.0" layoutX="444.0" layoutY="86.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="f4" fitHeight="177.0" fitWidth="128.0" layoutX="585.0" layoutY="86.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="f5" fitHeight="177.0" fitWidth="128.0" layoutX="22.0" layoutY="279.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="f6" fitHeight="177.0" fitWidth="128.0" layoutX="162.0" layoutY="279.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="f7" fitHeight="177.0" fitWidth="128.0" layoutX="303.0" layoutY="279.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="f8" fitHeight="177.0" fitWidth="128.0" layoutX="444.0" layoutY="279.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <ImageView fx:id="f9" fitHeight="177.0" fitWidth="128.0" layoutX="585.0" layoutY="279.0" onMouseClicked="#click_foto" pickOnBounds="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ImageView>
+            <TextField fx:id="fieldcuadro" editable="false" focusTraversable="false" layoutX="96.0" layoutY="14.0" prefHeight="60.0" prefWidth="593.0" style="-fx-background-color: transparent;" styleClass="palabra" stylesheets="@application.css" text="Completa una pareja para obtener el nombre y autor del cuadro">
+               <font>
+                  <Font name="Gill Sans Ultra Bold Condensed" size="20.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="NONE" />
+               </cursor>
+            </TextField>
+         </children>
+      </Pane>
+      <Pane fx:id="Pinstrucciones" prefHeight="576.0" prefWidth="735.0" visible="false">
+         <children>
+            <Button id="button1" fx:id="btinstrucciones" layoutX="210.0" layoutY="443.0" mnemonicParsing="false" onAction="#click_btinstrucciones" prefHeight="99.0" prefWidth="319.0" style="-fx-background-color: 0000000; -fx-border-color: WHITE; -fx-border-radius: 3pc;" styleClass="button1" stylesheets="@application.css" text="Volver al Menu" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="43.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextArea editable="false" layoutX="86.0" layoutY="60.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="313.0" prefWidth="566.0" style="-fx-background-color: 0;" text="                                     MEMORION&#10;&#10;Este juego, también conocido como Memoria o Busca las &#10;parejas, es un juego donde las tarjetas están boca abajo.&#10;&#10;En cada turno se da la vuelta a dos de ellas, si la imagen &#10;es la misma se quedan hacia arriba en el caso contrario &#10;se vuelven a girar. El objetivo del juego es encontrar las &#10;parejas.">
+               <font>
+                  <Font name="Constantia" size="21.0" />
+               </font>
+            </TextArea>
+         </children>
+      </Pane>
+      <Pane fx:id="PWin_Loose" prefHeight="576.0" prefWidth="735.0" visible="false">
+         <children>
+            <ImageView fitHeight="434.0" fitWidth="735.0" pickOnBounds="true" />
+            <Label fx:id="LWin" layoutX="122.0" layoutY="68.0" prefHeight="139.0" prefWidth="490.0" text="¡HAS GANADO!" textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Mistral" size="96.0" />
+               </font>
+            </Label>
+            <Label fx:id="LLoose" layoutX="122.0" layoutY="68.0" prefHeight="139.0" prefWidth="490.0" text="HAS PERDIDO.." textFill="WHITE" visible="false">
+               <font>
+                  <Font name="Mistral" size="96.0" />
+               </font>
+            </Label>
+            <Button id="button1" fx:id="btwin_loose1" layoutX="31.0" layoutY="453.0" mnemonicParsing="false" onAction="#click_btwin_loose1" prefHeight="76.0" prefWidth="319.0" style="-fx-background-color: 0000000; -fx-border-color: WHITE; -fx-border-radius: 3pc;" styleClass="button1" stylesheets="@application.css" text="Nuevo Juego" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="43.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button1" fx:id="btwin_loose2" layoutX="382.0" layoutY="453.0" mnemonicParsing="false" onAction="#click_btwin_loose2" prefHeight="86.0" prefWidth="319.0" style="-fx-background-color: 0000000; -fx-border-color: WHITE; -fx-border-radius: 3pc;" styleClass="button1" stylesheets="@application.css" text="Volver al Menu" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="43.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="button1" fx:id="btresultado" layoutX="563.0" layoutY="14.0" mnemonicParsing="false" onAction="#click_btresultado" prefHeight="61.0" prefWidth="158.0" style="-fx-background-color: 0000000; -fx-border-color: white; -fx-border-radius: 3pc;" styleClass="button5" stylesheets="@application.css" text="VER RESULTADO" textFill="WHITE">
+               <font>
+                  <Font name="Mistral" size="16.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
