@@ -1,0 +1,67 @@
+
+/*Memorion*/
+.button1:hover {
+  -fx-font-size: 50px;
+  -fx-font-family: "Mistral";
+}
+.button2:hover {
+  -fx-font-size: 40px;
+  -fx-font-family: "Mistral";
+}
+
+.button3:hover {
+  -fx-font-size: 30px;
+  -fx-font-family: "Mistral";
+}
+.button5:hover {
+  -fx-font-size: 20px;
+  -fx-font-family: "Mistral";
+}
+
+
+.letra:hover{
+  -fx-font-size: 30px;
+  -fx-font-family: "Viner Hand ITC";
+}
+
+.palabra{
+ -fx-text-fill: white;
+}
+
+/*Ahorcado*/
+.button4:hover {
+  -fx-font-size: 40px;
+  -fx-font-family: "Mistral";
+}
+
+/*Matematico*/
+.button6:hover {
+  -fx-font-size: 45px;
+  -fx-font-family: "Mistral";
+}
+.button7:hover {
+  -fx-font-size: 20px;
+  -fx-font-family: "Mistral";
+}
+.buttonC:hover{
+  -fx-font-size: 27px;
+  -fx-font-family: "Forte";
+}
+
+/*Principal*/
+.button8:hover {
+  
+  -fx-underline:true;
+}
+.button9:hover {
+  -fx-font-size: 20px;
+  
+}
+.button10:hover {
+  -fx-font-size: 27px;
+  
+}
+.button11:hover {
+  -fx-font-size: 35px;
+  -fx-font-family: "Tw Cen MT Condensed";
+}
